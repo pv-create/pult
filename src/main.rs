@@ -48,7 +48,7 @@ fn read_ir_signal(ir_pin: &mut InputPin) -> Option<u32> {
         if start_time.elapsed().as_millis() > 100 {
             return None;
         }
-    }
+    }//
 
     Some(signal.into_iter().rev().collect::<Vec<u32>>().into_iter().sum())
 }
